@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Mad Libs</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+</head>
+<body>
+
+<h3>Mad Libs: Concert Time!</h3>
+  <form>
+    <h4>Favorite Band: <input ng-model="favoriteGroup" placeholder="Favorite Group"></input>
+    <h4>Favorite Song: <input ng-model="favoriteSong" placeholder="Favorite Song"></input>
+    <h4>Favorite Group Member: <input ng-model="favoriteGroupMember" placeholder="Favorite Group Member"></input>
+    <h4>Adjective 1: <input ng-model="adjective1" placeholder="Adjective 1"></input>
+    <h4>Verb: <input ng-model="verb" placeholder="Verb"></input>
+    <h4>Adverb: <input ng-model="adverb" placeholder="Adverb"></input>
+    <h4>Adjective 2: <input ng-model="adjective2" placeholder="Adjective 2"></input>
+    <h4>Number 1-10: <input ng-model="number" placeholder="Number"></input>
+    <h4>Gift: <input ng-model="gift" placeholder="Gift"></input>
+    <h4>Family Member: <input ng-model="familyMember" placeholder="Family Member"></input>
+    
+  </form>
+
+  <p>It was finally time for the concert to start. {{ favoriteGroup }} was playing today, and you couldn't wait to see them! When "{{favoriteSong}}"" starts playing, {{favoriteGroupMember}} pulled you up on stage. You performed together, and noticed the {{adjective1}} fans staring at you. You wanted to {{verb}} away, but {{favoriteGroupMember}} told you to stay. You {{adverb}} agreed. After all, who gets to perform with their idol?<br /><br />
+
+  The {{adjective}} venue was starting to feel alive. You performed {{number}} more songs with {{favoriteBand}} before you decided to call it a day. When you were done, the members of {{favoriteBand}} gave you a(n) {{gift}}. Just when you were about to get a signature from each one of them, you hear {{familyMember}} in the background. Coming back to reality you realize...it was just a dream? <br><br>
+
+  For another day.
+
+  </p>
+
+</body>
+</html>
