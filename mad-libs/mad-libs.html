@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>Mad Libs</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+</head>
+<body>
+
+
+    <div>
+      <center><img src="http://wordpress.quantastical.com/wp-content/uploads/MadLibs-Logo-1170x420.png">
+    </div>
+
+         
+  <div class="transbox" id="input">
+  <form>
+    <br></br>
+    <div class="row">
+      <div class="col s2 m2 l4">Favorite Band: <input ng-model="favoriteGroup" placeholder="Favorite Group"></input></div>  
+      <div class="col s2 m2 l4">Favorite Song: <input ng-model="favoriteSong" placeholder="Favorite Song"></input></div>
+      <div class="col s2 m2 l4">Favorite Group Member: <input ng-model="favoriteGroupMember" placeholder="Favorite Group Member"></input></div>
+    </div>
+    <div class="row">
+      <div class="col s2 m5 l4">Adjective 1: <input ng-model="adjective1" placeholder="Adjective 1"></input></div>
+      <div class="col s2 m5 l4">Verb: <input ng-model="verb" placeholder="Verb"></input></div>
+      <div class="col s2 m5 l4">Adverb: <input ng-model="adverb" placeholder="Adverb"></input></div>
+    </div>
+    <div class="row">
+      <div class="col s2 m5 l4">Adjective 2: <input ng-model="adjective2" placeholder="Adjective 2"></input></div>
+      <div class="col s2 m5 l4">Number 1-10: <input ng-model="number" placeholder="Number"></input></div>
+      <div class="col s2 m5 l4">Gift: <input ng-model="gift" placeholder="Gift"></input></div>
+    </div>
+    <div class="row">
+      <div class="col s2 m5 l4">Family Member: <input ng-model="familyMember" placeholder="Family Member"></input></div>
+    </div>
+  </form>
+  <p><button type="submit" id="submit" class="waves-effect waves-light btn pink">Create Story</button> </span></p>
+  </div>
+  
+  <div id="story">
+  <div class="transbox">
+  <div class="container">
+    
+    <h3>Concert Time! </h3>
+	  <p>It was finally time for the concert to start. {{ favoriteGroup }} was playing today, and you couldn't wait to see them! When "{{favoriteSong}} starts playing, {{favoriteGroupMember}} pulled you up on stage. You performed together, and noticed the {{adjective1}} fans staring at you. You wanted to {{verb}} away, but {{favoriteGroupMember}} told you to stay. You {{adverb}} agreed. After all, who gets to perform with their idol?<br /><br />
+
+	  The {{adjective2}} venue was starting to feel alive. You performed {{number}} more songs with {{favoriteBand}} before you decided to call it a day. When you were done, the members of {{favoriteBand}} gave you a(n) {{gift}}. Just when you were about to get a signature from each one of them, you hear your {{familyMember}} in the background. Coming back to reality you realize...it was just a dream? <br><br>
+
+	  For another day.
+
+	  </p>
+  </div>
+  </div>
+  </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
+
+
